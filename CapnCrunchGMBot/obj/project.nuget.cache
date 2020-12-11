@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "5IXKsTupHXpusL5BQmB/EBWDBqZjh5fWZeKpolBwSjDQSXSxav6LmqiSRH7b7JRjKe+8EUk1yrQ7prMX0jPf+Q==",
+  "success": true,
+  "projectFilePath": "/Users/dks0584182/Documents/CapnCrunchGMBot/CapnCrunchGMBot/CapnCrunchGMBot.csproj",
+  "expectedPackageFiles": [
+    "/Users/dks0584182/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/dks0584182/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
+    "/Users/dks0584182/.nuget/packages/restease/1.5.0/restease.1.5.0.nupkg.sha512",
+    "/Users/dks0584182/.nuget/packages/swashbuckle.aspnetcore.swagger/5.6.3/swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "/Users/dks0584182/.nuget/packages/swashbuckle.aspnetcore.swaggergen/5.6.3/swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "/Users/dks0584182/.nuget/packages/swashbuckle.aspnetcore.swaggerui/5.6.3/swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
