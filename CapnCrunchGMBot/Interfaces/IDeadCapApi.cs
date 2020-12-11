@@ -1,8 +1,9 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using CapnCrunchGMBot.Models;
 using RestEase;
 
-namespace CapnCrunchGMBot
+namespace CapnCrunchGMBot.Interfaces
 {
     public interface IDeadCapApi
     {

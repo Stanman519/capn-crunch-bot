@@ -1,6 +1,6 @@
 using System;
 
-namespace CapnCrunchGMBot
+namespace CapnCrunchGMBot.Models
 {
     public class PendingTrade
     {        

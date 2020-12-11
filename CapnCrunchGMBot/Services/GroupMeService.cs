@@ -3,6 +3,8 @@ using System.Linq;
 using System.Net.Http;
 using System.Runtime.Serialization;
 using System.Threading.Tasks;
+using CapnCrunchGMBot.Interfaces;
+using CapnCrunchGMBot.Models;
 using Newtonsoft.Json;
 
 namespace CapnCrunchGMBot
