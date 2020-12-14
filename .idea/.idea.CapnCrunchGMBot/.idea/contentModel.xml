@@ -10,14 +10,17 @@
         <e p="Controllers" t="Include">
           <e p="BotController.cs" t="Include" />
         </e>
-        <e p="GroupMeService.cs" t="Include" />
-        <e p="IDeadCapApi.cs" t="Include" />
-        <e p="IGroupMeApi.cs" t="Include" />
+        <e p="Interfaces" t="Include">
+          <e p="IDeadCapApi.cs" t="Include" />
+          <e p="IGroupMeApi.cs" t="Include" />
+        </e>
         <e p="Models" t="Include">
           <e p="GroupModel.cs" t="Include" />
           <e p="GroupParent.cs" t="Include" />
           <e p="MemberModel.cs" t="Include" />
           <e p="Message.cs" t="Include" />
+          <e p="PendingTrade.cs" t="Include" />
+          <e p="TeamStandings.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -26,13 +29,14 @@
             </e>
           </e>
         </e>
-        <e p="PendingTrade.cs" t="Include" />
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
         </e>
+        <e p="Services" t="Include">
+          <e p="GroupMeService.cs" t="Include" />
+        </e>
         <e p="Startup.cs" t="Include" />
-        <e p="TeamStandings.cs" t="Include" />
       </e>
       <e p="CapnCrunchGMBot.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />

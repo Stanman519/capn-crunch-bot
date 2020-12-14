@@ -11,5 +11,7 @@ namespace CapnCrunchGMBot.Interfaces
         
         [Get("v3/groups/59795205?token=TNkXkjDPQ7jRs8r0hZKpfMRBaqWXk6AOyuKywGIE")]
         Task<GroupParent> GetMemberIds();
+        
+        //TODO: pinging the bot for something
     }
 }
