@@ -1,1 +1,2 @@
-worker: rake jobs: work
+web: cd $HOME/heroku_output && ./CapnCrunchGMBot
+worker: jobs: work
