@@ -1,6 +1,7 @@
 using CapnCrunchGMBot.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -21,7 +22,11 @@ namespace CapnCrunchGMBot
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddHttpsRedirection(opt => opt.HttpsPort = 443);
+            services.AddHttpsRedirection(opt =>
+            {
+                opt.RedirectStatusCode = StatusCodes.Status308PermanentRedirect;
+                opt.HttpsPort = 443;
+            });
             services.AddControllers();
             services.AddSwaggerGen();
             services.AddSingleton(RestClient.For<IDeadCapApi>("https://ryan-passion-project.apps.vn01.pcf.dcsg.com"));
@@ -29,15 +34,7 @@ namespace CapnCrunchGMBot
             services.AddScoped<IGroupMeService, GroupMeService>();
             services.AddHttpClient();
             
-            services.Configure<ForwardedHeadersOptions>(options =>
-            {
-                options.ForwardedHeaders = 
-                    ForwardedHeaders.XForwardedFor | 
-                    ForwardedHeaders.XForwardedProto;
 
-                options.KnownNetworks.Clear();
-                options.KnownProxies.Clear();
-            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -52,7 +49,6 @@ namespace CapnCrunchGMBot
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "CapnCrunch GroupMe Bot");
             });
-            app.UseForwardedHeaders();
             app.UseHttpsRedirection();
 
             app.UseRouting();
