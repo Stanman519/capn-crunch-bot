@@ -21,6 +21,7 @@ namespace CapnCrunchGMBot
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddHttpsRedirection(opt => opt.HttpsPort = 443);
             services.AddControllers();
             services.AddSwaggerGen();
             services.AddSingleton(RestClient.For<IDeadCapApi>("https://ryan-passion-project.apps.vn01.pcf.dcsg.com"));
