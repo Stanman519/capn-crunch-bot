@@ -28,6 +28,16 @@ namespace CapnCrunchGMBot
             services.AddSingleton(RestClient.For<IGroupMeApi>("https://api.groupme.com"));
             services.AddScoped<IGroupMeService, GroupMeService>();
             services.AddHttpClient();
+            
+            services.Configure<ForwardedHeadersOptions>(options =>
+            {
+                options.ForwardedHeaders = 
+                    ForwardedHeaders.XForwardedFor | 
+                    ForwardedHeaders.XForwardedProto;
+
+                options.KnownNetworks.Clear();
+                options.KnownProxies.Clear();
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,6 +52,7 @@ namespace CapnCrunchGMBot
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "CapnCrunch GroupMe Bot");
             });
+            app.UseForwardedHeaders();
             app.UseHttpsRedirection();
 
             app.UseRouting();
