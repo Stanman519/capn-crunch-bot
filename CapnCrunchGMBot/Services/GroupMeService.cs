@@ -65,7 +65,7 @@ namespace CapnCrunchGMBot
             string strForBot = "STANDINGS \n";
             standings.ForEach(s =>
             {
-                strForBot = $"{strForBot}{owners[s.FranchiseId]}   {s.H2hWins}-{s.H2hLosses}   {s.PointsFor} \n";
+                strForBot = $"{strForBot}{owners[s.FranchiseId]}   {s.H2hWins2}-{s.H2hLosses2}   {s.PointsFor2} \n";
             });
 
             await BotPost(strForBot);

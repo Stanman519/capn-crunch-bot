@@ -24,7 +24,7 @@ namespace CapnCrunchGMBot
         {
             services.AddControllers();
             services.AddSwaggerGen();
-            services.AddSingleton(RestClient.For<IDeadCapApi>("https://mfl-capn.herokuapp.com/"));
+            services.AddSingleton(RestClient.For<IDeadCapApi>("https://mfl-capn.herokuapp.com"));
             services.AddSingleton(RestClient.For<IGroupMeApi>("https://api.groupme.com"));
             services.AddScoped<IGroupMeService, GroupMeService>();
             services.AddHttpClient();
