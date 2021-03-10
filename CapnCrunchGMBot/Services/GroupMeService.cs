@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -6,6 +7,7 @@ using System.Threading.Tasks;
 using CapnCrunchGMBot.Interfaces;
 using CapnCrunchGMBot.Models;
 using Newtonsoft.Json;
+using RestEase;
 
 namespace CapnCrunchGMBot
 {
@@ -13,12 +15,15 @@ namespace CapnCrunchGMBot
     {
         public Task<List<TeamStandings>> PostStandingsToGroup(int year);
         public Task<List<PendingTrade>> PostTradeOffersToGroup(int year);
+        public Task PostTradeRumor();
     }
     
     public class GroupMeService : IGroupMeService
     {
         private IDeadCapApi _myApi;
         private IGroupMeApi _gmApi;
+        private readonly IMflApi _mfl;
+        private readonly IRumorService _rumor;
         private readonly IHttpClientFactory _clientFactory;
         
         private Dictionary<int, string> owners = new Dictionary<int, string>()
@@ -53,10 +58,12 @@ namespace CapnCrunchGMBot
             {12, "2513725"}
         };
         
-        public GroupMeService(IDeadCapApi api, IGroupMeApi gmApi)
+        public GroupMeService(IDeadCapApi api, IGroupMeApi gmApi, IMflApi mfl, IRumorService rumor)
         {
             _myApi = api;
             _gmApi = gmApi;
+            _mfl = mfl;
+            _rumor = rumor;
         }
 
         public async Task<List<TeamStandings>> PostStandingsToGroup(int year)
@@ -94,6 +101,81 @@ namespace CapnCrunchGMBot
             return trades;
         }
 
+        public async Task PostTradeRumor()
+        {
+            var deserializer = new JsonResponseDeserializer();
+            var info = new ResponseDeserializerInfo();
+            var res = await _mfl.GetTradeBait();
+            var group = await _gmApi.GetMemberIds();
+            var memberList = group.response.members;
+            string strForBot = "";
+            var jsonString = await res.Content.ReadAsStringAsync();
+            
+            try
+            {
+                var tradeBait = deserializer.Deserialize<TradeBaitParent>(jsonString, res, info).tradeBaits.tradeBait;
+                strForBot += _rumor.GetSources();
+                var ownerName = "";
+                owners.TryGetValue(Int32.Parse(tradeBait.franchise_id), out ownerName);
+                strForBot += ownerName + " ";
+                //check if this is a new post or not.
+                var postDate = DateTimeOffset.FromUnixTimeSeconds(Convert.ToInt64(tradeBait.timestamp));
+                if (postDate < DateTime.Now.AddDays(-1)) return;
+                // add verbage
+                strForBot += _rumor.AddBaitAction();
+                var hasEarlyPicks = _rumor.CheckForFirstRounders(tradeBait.willGiveUp);
+                var multiplePlayers = _rumor.CheckForMultiplePlayers(tradeBait.willGiveUp);
+                if (multiplePlayers)
+                {
+                    var parent = await _mfl.GetPlayersDetails(tradeBait.willGiveUp);
+                    var players = parent.players.player;
+                    strForBot += _rumor.ListPlayers(players, hasEarlyPicks);
+                }
+                else
+                {
+                    var parent = await _mfl.GetPlayerDetails(tradeBait.willGiveUp);
+                    var player = parent.players.player;
+                    strForBot += _rumor.ListPlayer(player, hasEarlyPicks);
+                }
+                //await BotPost(strForBot);
+                return;
+            }
+            catch (Exception e) {Console.WriteLine("not a single trade");}
+            try
+            {
+                var tradeBaits = deserializer.Deserialize<TradeBaitsParent>(jsonString, res, info).tradeBaits.tradeBait;
+                var ownerName = "";
+                //go through each post in list - 
+                foreach (var post in tradeBaits)
+                {
+                    var postDate = DateTimeOffset.FromUnixTimeSeconds(Convert.ToInt64(post.timestamp));
+                    if (postDate < DateTime.Now.AddDays(-1))
+                    {
+                        strForBot += _rumor.GetSources();
+                        owners.TryGetValue(Int32.Parse(post.franchise_id), out ownerName);
+                        strForBot += ownerName + " ";
+                        strForBot += _rumor.AddBaitAction();  // add verbage
+                        var hasEarlyPicks = _rumor.CheckForFirstRounders(post.willGiveUp);
+                        var multiplePlayers = _rumor.CheckForMultiplePlayers(post.willGiveUp);
+                        if (multiplePlayers)
+                        {
+                            var parent = await _mfl.GetPlayersDetails(post.willGiveUp);
+                            var players = parent.players.player;
+                            strForBot += _rumor.ListPlayers(players, hasEarlyPicks);
+                        }
+                        else
+                        {
+                            var parent = await _mfl.GetPlayerDetails(post.willGiveUp); 
+                            var player = parent.players.player;
+                            strForBot += _rumor.ListPlayer(player, hasEarlyPicks);
+                        }
+                        await BotPost(strForBot);
+                    }
+                }
+            }
+            catch (Exception e) { Console.WriteLine("not a multi trade");}
+        }
+
         public async Task BotPost(string text)
         {
             var message = new Message(text);
@@ -114,11 +196,9 @@ namespace CapnCrunchGMBot
             mentionList.Add(mention);
             message.attachments = mentionList;
             await _gmApi.SendMessage(message);
-
         }
-        
-        
-        
-        
     }
+    
+    
+    
 }

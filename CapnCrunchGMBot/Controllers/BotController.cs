@@ -37,5 +37,11 @@ namespace CapnCrunchGMBot.Controllers
         {
             return await _groupMeService.PostTradeOffersToGroup(year);
         }
+        
+        [HttpGet("tradeBait")]
+        public async Task PostTradeRumor()
+        {
+            await _groupMeService.PostTradeRumor();
+        }
     }
 }
