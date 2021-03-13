@@ -137,7 +137,7 @@ namespace CapnCrunchGMBot
                     var player = parent.players.player;
                     strForBot += _rumor.ListPlayer(player, hasEarlyPicks);
                 }
-                //await BotPost(strForBot);
+                await BotPost(strForBot);
                 return;
             }
             catch (Exception e) {Console.WriteLine("not a single trade");}
@@ -149,7 +149,7 @@ namespace CapnCrunchGMBot
                 foreach (var post in tradeBaits)
                 {
                     var postDate = DateTimeOffset.FromUnixTimeSeconds(Convert.ToInt64(post.timestamp));
-                    if (postDate < DateTime.Now.AddDays(-1))
+                    if (postDate > DateTime.Now.AddDays(-1))
                     {
                         strForBot += _rumor.GetSources();
                         owners.TryGetValue(Int32.Parse(post.franchise_id), out ownerName);
