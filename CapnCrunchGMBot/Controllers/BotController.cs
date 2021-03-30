@@ -10,7 +10,7 @@ namespace CapnCrunchGMBot.Controllers
     [Route("[controller]")]
     public class BotController : ControllerBase
     {
-        private  IGroupMeService _groupMeService;
+        private IGroupMeService _groupMeService;
 
         public BotController(IGroupMeService groupMeService)
         {
@@ -37,11 +37,17 @@ namespace CapnCrunchGMBot.Controllers
         {
             return await _groupMeService.PostTradeOffersToGroup(year);
         }
-        
+
         [HttpGet("tradeBait")]
         public async Task PostTradeRumor()
         {
             await _groupMeService.PostTradeRumor();
         }
-    }
+
+        [HttpGet("completedTrades/{year}")]
+        public async Task PostCompletedTrades(int year)
+        {
+            await _groupMeService.PostCompletedTradeToGroup();
+        }
+}
 }

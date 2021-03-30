@@ -16,5 +16,11 @@ namespace CapnCrunchGMBot.Interfaces
         
         [Get("export?TYPE=players&L=13894&APIKEY=ahBv1sGSvuWux1OmOVrJaDYeFLox&DETAILS=&SINCE=&PLAYERS={player}&JSON=1")]
         Task<PlayerParent> GetPlayerDetails([Path] string player);
+        
+        [Get("export?TYPE=transactions&L=13894&APIKEY=ahBv1sGSvuWux1OmOVrJaDYeFLox&W=&TRANS_TYPE=TRADE&FRANCHISE=&DAYS=1&COUNT=&JSON=1")]
+        Task<HttpResponseMessage> GetRecentTrade();
+
+        [Get("export?TYPE=salaries&L=13894&APIKEY=ahBv1sGSvuWvx1GmOVrJaDYeFLox&JSON=1")]
+        Task<SalariesRoot> GetPlayerSalaries();
     }
 }

@@ -16,6 +16,7 @@ namespace CapnCrunchGMBot
         public Task<List<TeamStandings>> PostStandingsToGroup(int year);
         public Task<List<PendingTrade>> PostTradeOffersToGroup(int year);
         public Task PostTradeRumor();
+        public Task PostCompletedTradeToGroup();
     }
     
     public class GroupMeService : IGroupMeService
@@ -99,6 +100,64 @@ namespace CapnCrunchGMBot
                 });
             }
             return trades;
+        }
+
+        public async Task PostCompletedTradeToGroup()
+        {
+            var deserializer = new JsonResponseDeserializer();
+            var info = new ResponseDeserializerInfo();
+            var tradeRes = await _mfl.GetRecentTrade();
+            var strForBot = "";
+            var jsonString = await tradeRes.Content.ReadAsStringAsync();
+            var owner1 = "";
+            var owner2 = "";
+            var assets1 = "";
+            var assets2 = "";
+
+            try
+            {
+                //Single
+                var tradeSingle = deserializer.Deserialize<TradeTransactionSingle>(jsonString, tradeRes, info)
+                    .transactions.transaction;
+                owners.TryGetValue(Int32.Parse(tradeSingle.franchise), out owner1);
+                owners.TryGetValue(Int32.Parse(tradeSingle.franchise2), out owner2);
+                strForBot += $"{_rumor.GetSources()}{owner1} and {owner2} have completed a trade. \n";
+                
+                var multiplePlayers1 = _rumor.CheckForMultiplePlayers(tradeSingle.franchise1_gave_up);
+                var multiplePlayers2 = _rumor.CheckForMultiplePlayers(tradeSingle.franchise2_gave_up);
+                assets1 = multiplePlayers1 == true ? await _rumor.ListMultipleTradeAssets(tradeSingle.franchise1_gave_up) : await _rumor.ListSingleTradeAsset(tradeSingle.franchise1_gave_up);
+                assets2 = multiplePlayers2 == true ? await _rumor.ListMultipleTradeAssets(tradeSingle.franchise2_gave_up) : await _rumor.ListSingleTradeAsset(tradeSingle.franchise2_gave_up);
+                
+                strForBot += $"{owner1} sends: \n {assets1} \n {owner2} sends: \n {assets2}";
+                
+                await BotPost(strForBot);
+                return;
+            }
+            catch (Exception e) {Console.WriteLine("not a single trade");}
+
+            try
+            {
+                //Multiple
+                var multiTrade = deserializer.Deserialize<TradeTransactionMulti>(jsonString, tradeRes, info)
+                    .transactions.transaction;
+
+                foreach (var trade in multiTrade)
+                {
+                    owners.TryGetValue(Int32.Parse(trade.franchise), out owner1);
+                    owners.TryGetValue(Int32.Parse(trade.franchise2), out owner2);
+                    strForBot += $"{_rumor.GetSources()}{owner1} and {owner2} have completed a trade. \n";
+                
+                    var multiplePlayers1 = _rumor.CheckForMultiplePlayers(trade.franchise1_gave_up);
+                    var multiplePlayers2 = _rumor.CheckForMultiplePlayers(trade.franchise2_gave_up);
+                    assets1 = multiplePlayers1 == true ? await _rumor.ListMultipleTradeAssets(trade.franchise1_gave_up) : await _rumor.ListSingleTradeAsset(trade.franchise1_gave_up);
+                    assets2 = multiplePlayers2 == true ? await _rumor.ListMultipleTradeAssets(trade.franchise2_gave_up) : await _rumor.ListSingleTradeAsset(trade.franchise2_gave_up);
+                
+                    strForBot += $"{owner1} sends: \n {assets1} \n {owner2} sends: \n {assets2}";
+                    
+                    await BotPost(strForBot);
+                }
+            }
+            catch (Exception e) {Console.WriteLine("not a multi trade");}
         }
 
         public async Task PostTradeRumor()
