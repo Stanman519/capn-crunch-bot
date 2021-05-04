@@ -17,6 +17,7 @@ namespace CapnCrunchGMBot
         public Task<List<PendingTrade>> PostTradeOffersToGroup(int year);
         public Task PostTradeRumor();
         public Task PostCompletedTradeToGroup();
+        Task BotPost(string text);
     }
     
     public class GroupMeService : IGroupMeService
