@@ -53,7 +53,7 @@ namespace CapnCrunchGMBot.Controllers
         [HttpPost("auctionError")]
         public async Task PostCompletedTrades([FromBody] ErrorMessage error)
         {
-            await _groupMeService.BotPost(error.Message);
+            //await _groupMeService.BotPost(error.Message);
         }
     }
 }
