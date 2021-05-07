@@ -126,8 +126,8 @@ namespace CapnCrunchGMBot
                 
                 var multiplePlayers1 = _rumor.CheckForMultiplePlayers(tradeSingle.franchise1_gave_up);
                 var multiplePlayers2 = _rumor.CheckForMultiplePlayers(tradeSingle.franchise2_gave_up);
-                assets1 = multiplePlayers1 == true ? await _rumor.ListMultipleTradeAssets(tradeSingle.franchise1_gave_up) : await _rumor.ListSingleTradeAsset(tradeSingle.franchise1_gave_up);
-                assets2 = multiplePlayers2 == true ? await _rumor.ListMultipleTradeAssets(tradeSingle.franchise2_gave_up) : await _rumor.ListSingleTradeAsset(tradeSingle.franchise2_gave_up);
+                assets1 = multiplePlayers1 ? await _rumor.ListTradeInfoWithMultiplePlayers(tradeSingle.franchise1_gave_up) : await _rumor.ListTradeInfoWithSinglePlayer(tradeSingle.franchise1_gave_up);
+                assets2 = multiplePlayers2 ? await _rumor.ListTradeInfoWithMultiplePlayers(tradeSingle.franchise2_gave_up) : await _rumor.ListTradeInfoWithSinglePlayer(tradeSingle.franchise2_gave_up);
                 
                 strForBot += $"{owner1} sends: \n {assets1} \n {owner2} sends: \n {assets2}";
                 
@@ -150,8 +150,8 @@ namespace CapnCrunchGMBot
                 
                     var multiplePlayers1 = _rumor.CheckForMultiplePlayers(trade.franchise1_gave_up);
                     var multiplePlayers2 = _rumor.CheckForMultiplePlayers(trade.franchise2_gave_up);
-                    assets1 = multiplePlayers1 == true ? await _rumor.ListMultipleTradeAssets(trade.franchise1_gave_up) : await _rumor.ListSingleTradeAsset(trade.franchise1_gave_up);
-                    assets2 = multiplePlayers2 == true ? await _rumor.ListMultipleTradeAssets(trade.franchise2_gave_up) : await _rumor.ListSingleTradeAsset(trade.franchise2_gave_up);
+                    assets1 = multiplePlayers1 == true ? await _rumor.ListTradeInfoWithMultiplePlayers(trade.franchise1_gave_up) : await _rumor.ListTradeInfoWithSinglePlayer(trade.franchise1_gave_up);
+                    assets2 = multiplePlayers2 == true ? await _rumor.ListTradeInfoWithMultiplePlayers(trade.franchise2_gave_up) : await _rumor.ListTradeInfoWithSinglePlayer(trade.franchise2_gave_up);
                 
                     strForBot += $"{owner1} sends: \n {assets1} \n {owner2} sends: \n {assets2}";
                     

@@ -16,8 +16,8 @@ namespace CapnCrunchGMBot
         string ListPlayer(Player player, bool hasEarlyPicks);
         bool CheckForFirstRounders(string offeringIds);
         bool CheckForMultiplePlayers(string idArray);
-        Task<string> ListMultipleTradeAssets(string assets);
-        Task<string> ListSingleTradeAsset(string asset);
+        Task<string> ListTradeInfoWithMultiplePlayers(string assets);
+        Task<string> ListTradeInfoWithSinglePlayer(string asset);
     }
 
     public class RumorService : IRumorService
@@ -104,7 +104,7 @@ namespace CapnCrunchGMBot
             return false;
         }
 
-        public async Task<string> ListMultipleTradeAssets(string assets)
+        public async Task<string> ListTradeInfoWithMultiplePlayers(string assets)
         {
             var ret = "";
             var salary = "";
@@ -163,40 +163,44 @@ namespace CapnCrunchGMBot
             }
             return ret;
         }       
-        public async Task<string> ListSingleTradeAsset(string assets)
+        public async Task<string> ListTradeInfoWithSinglePlayer(string assets)
         {
             var ret = "";
             var salary = "";
             var years = "";
-            if (!assets.Contains("_"))
+            var splitAssets = assets.Split(",");
+            foreach (var asset in splitAssets)
             {
-                var res = await _mflApi.GetPlayerDetails(assets);
-                var salaries = await _mflApi.GetPlayerSalaries();
-                var player = res.players.player;
-                var nameArray = player.name.Split(",");
-                var name = nameArray[1].Trim() + " " + nameArray[0];
-                var contract = salaries.salaries.leagueUnit.player.FirstOrDefault(_ => _.id == player.id);
-                salary = contract?.salary;
-                years = contract?.contractYear;
-                ret += $"{name} (${salary}, {years} yrs left) \n";
-                return ret;
-            }
-            else
-            {
-                var pickDetails = assets.Split("_");
-                if (pickDetails[0].ToUpper() == "DP")
+                if (!assets.Contains("_"))
                 {
-                    var round = Int32.Parse(pickDetails[1]) + 1;
-                    var pickNum = Int32.Parse(pickDetails[2]) + 1;
-                    return $"The {round}.{pickNum} draft pick \n";
+                    var res = await _mflApi.GetPlayerDetails(assets);
+                    var salaries = await _mflApi.GetPlayerSalaries();
+                    var player = res.players.player;
+                    var nameArray = player.name.Split(",");
+                    var name = nameArray[1].Trim() + " " + nameArray[0];
+                    var contract = salaries.salaries.leagueUnit.player.FirstOrDefault(_ => _.id == player.id);
+                    salary = contract?.salary;
+                    years = contract?.contractYear;
+                    ret += $"{name} (${salary}, {years} yrs left) \n";
+                    return ret;
                 }
-                if (pickDetails[0].ToUpper() == "FP")
+                else
                 {
-                    return $"A {pickDetails[2]} round {pickDetails[3]} draft pick \n";
+                    var pickDetails = asset.Split("_");
+                    if (pickDetails[0].ToUpper() == "DP")
+                    {
+                        var round = Int32.Parse(pickDetails[1]) + 1;
+                        var pickNum = Int32.Parse(pickDetails[2]) + 1;
+                        ret += $"The {round}.{pickNum} draft pick \n";
+                    }
+                    if (pickDetails[0].ToUpper() == "FP")
+                    {
+                        ret += $"A {pickDetails[2]} round {pickDetails[3]} draft pick \n";
+                    }
                 }
-                
-                return "";
             }
+
+            return ret;
         }
 
         private Dictionary<int, string> sources = new Dictionary<int, string>()
