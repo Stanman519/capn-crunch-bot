@@ -120,6 +120,13 @@ namespace CapnCrunchGMBot
                 //Single
                 var tradeSingle = deserializer.Deserialize<TradeTransactionSingle>(jsonString, tradeRes, info)
                     .transactions.transaction;
+                DateTime tenMinAgo = DateTime.Now.AddMinutes(-10);
+                var tradeTime = DateTimeOffset.FromUnixTimeSeconds(Int64.Parse(tradeSingle.timestamp));
+                // check if trade was not in the last 10 minutes to bail early
+                if (tradeTime < tenMinAgo)
+                {
+                    return;
+                }
                 owners.TryGetValue(Int32.Parse(tradeSingle.franchise), out owner1);
                 owners.TryGetValue(Int32.Parse(tradeSingle.franchise2), out owner2);
                 strForBot += $"{_rumor.GetSources()}{owner1} and {owner2} have completed a trade. \n";
@@ -141,21 +148,26 @@ namespace CapnCrunchGMBot
                 //Multiple
                 var multiTrade = deserializer.Deserialize<TradeTransactionMulti>(jsonString, tradeRes, info)
                     .transactions.transaction;
-
+                DateTime tenMinAgo = DateTime.Now.AddMinutes(-10);
                 foreach (var trade in multiTrade)
                 {
-                    owners.TryGetValue(Int32.Parse(trade.franchise), out owner1);
-                    owners.TryGetValue(Int32.Parse(trade.franchise2), out owner2);
-                    strForBot += $"{_rumor.GetSources()}{owner1} and {owner2} have completed a trade. \n";
+                    var tradeTime = DateTimeOffset.FromUnixTimeSeconds(Int64.Parse(trade.timestamp));
+                    // check if trade was not in the last 10 minutes to bail early
+                    if (tradeTime > tenMinAgo)
+                    {
+                        owners.TryGetValue(Int32.Parse(trade.franchise), out owner1);
+                        owners.TryGetValue(Int32.Parse(trade.franchise2), out owner2);
+                        strForBot += $"{_rumor.GetSources()}{owner1} and {owner2} have completed a trade. \n";
                 
-                    var multiplePlayers1 = _rumor.CheckForMultiplePlayers(trade.franchise1_gave_up);
-                    var multiplePlayers2 = _rumor.CheckForMultiplePlayers(trade.franchise2_gave_up);
-                    assets1 = multiplePlayers1 == true ? await _rumor.ListTradeInfoWithMultiplePlayers(trade.franchise1_gave_up) : await _rumor.ListTradeInfoWithSinglePlayer(trade.franchise1_gave_up);
-                    assets2 = multiplePlayers2 == true ? await _rumor.ListTradeInfoWithMultiplePlayers(trade.franchise2_gave_up) : await _rumor.ListTradeInfoWithSinglePlayer(trade.franchise2_gave_up);
+                        var multiplePlayers1 = _rumor.CheckForMultiplePlayers(trade.franchise1_gave_up);
+                        var multiplePlayers2 = _rumor.CheckForMultiplePlayers(trade.franchise2_gave_up);
+                        assets1 = multiplePlayers1 == true ? await _rumor.ListTradeInfoWithMultiplePlayers(trade.franchise1_gave_up) : await _rumor.ListTradeInfoWithSinglePlayer(trade.franchise1_gave_up);
+                        assets2 = multiplePlayers2 == true ? await _rumor.ListTradeInfoWithMultiplePlayers(trade.franchise2_gave_up) : await _rumor.ListTradeInfoWithSinglePlayer(trade.franchise2_gave_up);
                 
-                    strForBot += $"{owner1} sends: \n {assets1} \n {owner2} sends: \n {assets2}";
+                        strForBot += $"{owner1} sends: \n {assets1} \n {owner2} sends: \n {assets2}";
                     
-                    await BotPost(strForBot);
+                        await BotPost(strForBot);
+                    }
                 }
             }
             catch (Exception e) {Console.WriteLine("not a multi trade");}
