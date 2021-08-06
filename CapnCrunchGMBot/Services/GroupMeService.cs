@@ -83,6 +83,9 @@ namespace CapnCrunchGMBot
 
         public async Task<List<PendingTrade>> PostTradeOffersToGroup(int year)
         {
+            DateTime tenMinAgo = DateTime.Now.AddMinutes(-10);
+            var timeDifference = DateTime.Now.TimeOfDay - DateTime.Now.AddDays(-1).AddMinutes(-10).TimeOfDay;
+            var tenMinDuration = new TimeSpan(0, 0, 10, 0);
             var trades = await _myApi.GetMflPendingTrades(year);
             var group = await _gmApi.GetMemberIds();
             var memberList = group.response.members;
@@ -93,11 +96,14 @@ namespace CapnCrunchGMBot
             {
                 trades.ForEach(async t =>
                 {
-                    // get member id, then lookup their name;
-                    var tagName = memberList.Find(m => m.user_id == memberIds[t.offeredTo]);
-                    var tagString = $"@{tagName.nickname}";
-                    strForBot = ", you have a pending trade offer!";
-                    await BotPostWithTag(strForBot, tagString, tagName.user_id);
+                    if (t.timeStamp > tenMinAgo || (timeDifference.Ticks > 0 && timeDifference < tenMinDuration))
+                    {
+                        // get member id, then lookup their name;
+                        var tagName = memberList.Find(m => m.user_id == memberIds[t.offeredTo]);
+                        var tagString = $"@{tagName.nickname}";
+                        strForBot = ", you have a pending trade offer!";
+                        await BotPostWithTag(strForBot, tagString, tagName.user_id);
+                    }
                 });
             }
             return trades;
