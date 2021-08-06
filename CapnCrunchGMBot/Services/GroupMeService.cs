@@ -84,7 +84,6 @@ namespace CapnCrunchGMBot
         public async Task<List<PendingTrade>> PostTradeOffersToGroup(int year)
         {
             DateTime tenMinAgo = DateTime.Now.AddMinutes(-10);
-            var timeDifference = DateTime.Now.TimeOfDay - DateTime.Now.AddDays(-1).AddMinutes(-10).TimeOfDay;
             var tenMinDuration = new TimeSpan(0, 0, 10, 0);
             var trades = await _myApi.GetMflPendingTrades(year);
             var group = await _gmApi.GetMemberIds();
@@ -96,6 +95,7 @@ namespace CapnCrunchGMBot
             {
                 trades.ForEach(async t =>
                 {
+                    var timeDifference = DateTimeOffset.FromUnixTimeSeconds(Convert.ToInt64(t.timeStamp)).TimeOfDay - DateTime.Now.AddDays(-1).AddMinutes(-10).TimeOfDay;
                     if (timeDifference.Ticks > 0 && timeDifference < tenMinDuration)
                     {
                         // get member id, then lookup their name;
