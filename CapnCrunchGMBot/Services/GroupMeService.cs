@@ -96,7 +96,7 @@ namespace CapnCrunchGMBot
             {
                 trades.ForEach(async t =>
                 {
-                    if (t.timeStamp > tenMinAgo || (timeDifference.Ticks > 0 && timeDifference < tenMinDuration))
+                    if (timeDifference.Ticks > 0 && timeDifference < tenMinDuration)
                     {
                         // get member id, then lookup their name;
                         var tagName = memberList.Find(m => m.user_id == memberIds[t.offeredTo]);
