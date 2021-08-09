@@ -95,7 +95,7 @@ namespace CapnCrunchGMBot
             {
                 trades.ForEach(async t =>
                 {
-                    var timeDifference = DateTimeOffset.FromUnixTimeSeconds(Convert.ToInt64(t.timeStamp)).TimeOfDay - DateTime.Now.AddDays(-1).AddMinutes(-10).TimeOfDay;
+                    var timeDifference = t.timeStamp.TimeOfDay - DateTime.Now.AddMinutes(-10).TimeOfDay;
                     if (timeDifference.Ticks > 0 && timeDifference < tenMinDuration)
                     {
                         // get member id, then lookup their name;
