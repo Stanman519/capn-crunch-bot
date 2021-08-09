@@ -212,11 +212,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/dks0584182/Documents/CapnCrunchGMBot/CapnCrunchGMBot/CapnCrunchGMBot.csproj",
+      "projectUniqueName": "/Users/dks0584182/Documents/Heroku/CapnCrunchGMBot/CapnCrunchGMBot/CapnCrunchGMBot.csproj",
       "projectName": "CapnCrunchGMBot",
-      "projectPath": "/Users/dks0584182/Documents/CapnCrunchGMBot/CapnCrunchGMBot/CapnCrunchGMBot.csproj",
+      "projectPath": "/Users/dks0584182/Documents/Heroku/CapnCrunchGMBot/CapnCrunchGMBot/CapnCrunchGMBot.csproj",
       "packagesPath": "/Users/dks0584182/.nuget/packages/",
-      "outputPath": "/Users/dks0584182/Documents/CapnCrunchGMBot/CapnCrunchGMBot/obj/",
+      "outputPath": "/Users/dks0584182/Documents/Heroku/CapnCrunchGMBot/CapnCrunchGMBot/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/dks0584182/.nuget/NuGet/NuGet.Config"
@@ -231,6 +231,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -242,6 +243,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Newtonsoft.Json": {
             "target": "Package",
@@ -274,6 +276,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.1.10, 3.1.10]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -282,7 +290,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.103/RuntimeIdentifierGraph.json"
       }
     }
   }

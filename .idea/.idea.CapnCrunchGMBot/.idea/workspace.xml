@@ -8,8 +8,32 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68a5c67f-6964-4d0a-a763-c10f224c3d32" name="Default Changelist" comment="">
+    <list default="true" id="68a5c67f-6964-4d0a-a763-c10f224c3d32" name="Default Changelist" comment="time difference issue">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CapnCrunchGMBot/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CapnCrunchGMBot/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CapnCrunchGMBot/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CapnCrunchGMBot/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CapnCrunchGMBot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CapnCrunchGMBot/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CapnCrunchGMBot/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/.idea/.idea.CapnCrunchGMBot.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/.idea/.idea.CapnCrunchGMBot.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/Services/GroupMeService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/Services/GroupMeService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/bin/Debug/netcoreapp3.1/CapnCrunchGMBot.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/bin/Debug/netcoreapp3.1/CapnCrunchGMBot.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/bin/Debug/netcoreapp3.1/CapnCrunchGMBot.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/bin/Debug/netcoreapp3.1/CapnCrunchGMBot.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/obj/CapnCrunchGMBot.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/obj/CapnCrunchGMBot.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/obj/CapnCrunchGMBot.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/obj/CapnCrunchGMBot.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/obj/Debug/netcoreapp3.1/CapnCrunchGMBot.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/obj/Debug/netcoreapp3.1/CapnCrunchGMBot.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/obj/Debug/netcoreapp3.1/CapnCrunchGMBot.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/obj/Debug/netcoreapp3.1/CapnCrunchGMBot.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/obj/Debug/netcoreapp3.1/CapnCrunchGMBot.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/obj/Debug/netcoreapp3.1/CapnCrunchGMBot.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/obj/Debug/netcoreapp3.1/CapnCrunchGMBot.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/obj/Debug/netcoreapp3.1/CapnCrunchGMBot.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/obj/Debug/netcoreapp3.1/CapnCrunchGMBot.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/obj/Debug/netcoreapp3.1/CapnCrunchGMBot.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/obj/Debug/netcoreapp3.1/CapnCrunchGMBot.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/obj/Debug/netcoreapp3.1/CapnCrunchGMBot.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/obj/Debug/netcoreapp3.1/CapnCrunchGMBot.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/obj/Debug/netcoreapp3.1/CapnCrunchGMBot.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,44 +44,31 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/EB067793-5C3F-4219-AEF1-3AB117C20649/22D/AsyncValueTaskMethodBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/EB067793-5C3F-4219-AEF1-3AB117C20649/1D8/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/EB067793-5C3F-4219-AEF1-3AB117C20649/3A4/List.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/EB067793-5C3F-4219-AEF1-3AB117C20649/22D/AsyncValueTaskMethodBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/dks0584182/Documents/Heroku/CapnCrunchGMBot/CapnCrunchGMBot/Services/GroupMeService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7D4EC089-175C-434C-89DB-7DCF04F93318/18/1ccec373/ImplementationFactory.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/EB067793-5C3F-4219-AEF1-3AB117C20649/147/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/EB067793-5C3F-4219-AEF1-3AB117C20649/1D8/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/CapnCrunchGMBot/TeamStandings.cs" />
-        <option value="$PROJECT_DIR$/CapnCrunchGMBot/Program.cs" />
-        <option value="$PROJECT_DIR$/CapnCrunchGMBot/DeadCapApi.cs" />
-        <option value="$PROJECT_DIR$/CapnCrunchGMBot/Message.cs" />
-        <option value="$PROJECT_DIR$/CapnCrunchGMBot/GroupMeApi.cs" />
-        <option value="$PROJECT_DIR$/CapnCrunchGMBot/IDeadCapApi.cs" />
-        <option value="$PROJECT_DIR$/CapnCrunchGMBot/PendingTrade.cs" />
-        <option value="$PROJECT_DIR$/CapnCrunchGMBot/Controllers/BotController.cs" />
-        <option value="$PROJECT_DIR$/CapnCrunchGMBot/MemberModel.cs" />
-        <option value="$PROJECT_DIR$/CapnCrunchGMBot/GroupModel.cs" />
-        <option value="$PROJECT_DIR$/CapnCrunchGMBot/Models/GroupModel.cs" />
-        <option value="$PROJECT_DIR$/CapnCrunchGMBot/Startup.cs" />
-        <option value="$PROJECT_DIR$/CapnCrunchGMBot/Models/GroupParent.cs" />
-        <option value="$PROJECT_DIR$/CapnCrunchGMBot/IGroupMeApi.cs" />
-        <option value="$PROJECT_DIR$/CapnCrunchGMBot/Models/Message.cs" />
-        <option value="$PROJECT_DIR$/CapnCrunchGMBot/GroupMeService.cs" />
-        <option value="$PROJECT_DIR$/CapnCrunchGMBot/Interfaces/IDeadCapApi.cs" />
-        <option value="$PROJECT_DIR$/CapnCrunchGMBot/Models/PendingTrade.cs" />
-        <option value="$PROJECT_DIR$/CapnCrunchGMBot/Interfaces/IGroupMeApi.cs" />
-      </list>
-    </option>
+    <changedPaths>
+      <option value="$PROJECT_DIR$/CapnCrunchGMBot/Controllers/BotController.cs" />
+      <option value="$PROJECT_DIR$/CapnCrunchGMBot/Program.cs" />
+      <option value="$PROJECT_DIR$/CapnCrunchGMBot/Services/GroupMeService.cs" />
+    </changedPaths>
   </component>
   <component name="ProjectId" id="1l7AcMUAM3Zx1gItkixrwlii4lB" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3162808" />
-    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.27109784" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.12730466" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.10886743" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -122,6 +133,27 @@
       <workItem from="1607519351479" duration="3159000" />
       <workItem from="1607547352156" duration="10674000" />
       <workItem from="1607700577576" duration="7163000" />
+      <workItem from="1614466691194" duration="3557000" />
+      <workItem from="1614781957067" duration="964000" />
+      <workItem from="1614784009955" duration="67000" />
+      <workItem from="1615145777131" duration="889000" />
+      <workItem from="1615307888155" duration="22707000" />
+      <workItem from="1615399005581" duration="1563000" />
+      <workItem from="1615405623363" duration="6233000" />
+      <workItem from="1615515738294" duration="659000" />
+      <workItem from="1615602350624" duration="2926000" />
+      <workItem from="1617044937290" duration="14072000" />
+      <workItem from="1619461352319" duration="682000" />
+      <workItem from="1619700957570" duration="801000" />
+      <workItem from="1620133776078" duration="1540000" />
+      <workItem from="1620219736916" duration="70000" />
+      <workItem from="1620243403493" duration="450000" />
+      <workItem from="1620245591343" duration="30000" />
+      <workItem from="1620410251606" duration="3256000" />
+      <workItem from="1620504796795" duration="2205000" />
+      <workItem from="1628259298963" duration="4173000" />
+      <workItem from="1628274770861" duration="85000" />
+      <workItem from="1628275320739" duration="1767000" />
     </task>
     <task id="LOCAL-00001" summary="moved files">
       <created>1607711394441</created>
@@ -130,7 +162,112 @@
       <option name="project" value="LOCAL" />
       <updated>1607711394441</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fixed endpoints for heroku">
+      <created>1614530182886</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1614530182886</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fixed standings model for multi year">
+      <created>1614532915607</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1614532915607</updated>
+    </task>
+    <task id="LOCAL-00004" summary="token swap">
+      <created>1614782988192</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1614782988192</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added trading block rumor bot">
+      <created>1615412222746</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1615412222746</updated>
+    </task>
+    <task id="LOCAL-00006" summary="wrong guard clause for multiple trade entires">
+      <created>1615602874176</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1615602874176</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added completed trades endpoint">
+      <created>1617063747919</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1617063747919</updated>
+    </task>
+    <task id="LOCAL-00008" summary="error endpoint for auction">
+      <created>1620136796189</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1620136796189</updated>
+    </task>
+    <task id="LOCAL-00009" summary="error message model">
+      <created>1620219795954</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1620219795954</updated>
+    </task>
+    <task id="LOCAL-00010" summary="constructor issue">
+      <created>1620243802063</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1620243802063</updated>
+    </task>
+    <task id="LOCAL-00011" summary="turing off error messages for testing">
+      <created>1620245608324</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1620245608324</updated>
+    </task>
+    <task id="LOCAL-00012" summary="trade announcement bug">
+      <created>1620413761418</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1620413761418</updated>
+    </task>
+    <task id="LOCAL-00013" summary="completed trades every 10 min">
+      <created>1620579791638</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1620579791638</updated>
+    </task>
+    <task id="LOCAL-00014" summary="trade offers every ten min">
+      <created>1628270295530</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1628270295530</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fixed 10 minute issue for pending trades">
+      <created>1628274842426</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1628274842426</updated>
+    </task>
+    <task id="LOCAL-00016" summary="time difference issue">
+      <created>1628275631877</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1628275631877</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,161 +290,92 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="moved files" />
-    <option name="LAST_COMMIT_MESSAGE" value="moved files" />
+    <MESSAGE value="fixed endpoints for heroku" />
+    <MESSAGE value="fixed standings model for multi year" />
+    <MESSAGE value="token swap" />
+    <MESSAGE value="added trading block rumor bot" />
+    <MESSAGE value="wrong guard clause for multiple trade entires" />
+    <MESSAGE value="added completed trades endpoint" />
+    <MESSAGE value="error endpoint for auction" />
+    <MESSAGE value="error message model" />
+    <MESSAGE value="constructor issue" />
+    <MESSAGE value="turing off error messages for testing" />
+    <MESSAGE value="trade announcement bug" />
+    <MESSAGE value="completed trades every 10 min" />
+    <MESSAGE value="trade offers every ten min" />
+    <MESSAGE value="fixed 10 minute issue for pending trades" />
+    <MESSAGE value="time difference issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="time difference issue" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="-113" y="-949" width="1449" height="731" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606943114355">
-      <screen x="-1760" y="-1417" width="3440" height="1337" />
-    </state>
-    <state x="-113" y="-949" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1760.-1417.3440.1337/0.23.1680.1027@-1760.-1417.3440.1337" timestamp="1606943114355" />
-    <state x="-227" y="-1152" width="1449" height="731" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1760.-1417.3440.1417/0.23.1680.963@-1760.-1417.3440.1417" timestamp="1606938675912" />
-    <state width="2709" height="438" key="GridCell.Tab.0.bottom" timestamp="1607608008066">
-      <screen x="-1760" y="-1417" width="3440" height="1417" />
-    </state>
-    <state width="2391" height="344" key="GridCell.Tab.0.bottom/-1760.-1417.3440.1337/0.23.1680.1027@-1760.-1417.3440.1337" timestamp="1606945901297" />
-    <state width="2709" height="438" key="GridCell.Tab.0.bottom/-1760.-1417.3440.1417/0.23.1680.960@-1760.-1417.3440.1417" timestamp="1607608008066" />
-    <state width="2709" height="356" key="GridCell.Tab.0.bottom/-1760.-1417.3440.1417/0.23.1680.961@-1760.-1417.3440.1417" timestamp="1607565102814" />
-    <state width="1351" height="358" key="GridCell.Tab.0.bottom/-1760.-1417.3440.1417/0.23.1680.963@-1760.-1417.3440.1417" timestamp="1607545260224" />
-    <state width="2709" height="438" key="GridCell.Tab.0.center" timestamp="1607608008066">
-      <screen x="-1760" y="-1417" width="3440" height="1417" />
-    </state>
-    <state width="2391" height="344" key="GridCell.Tab.0.center/-1760.-1417.3440.1337/0.23.1680.1027@-1760.-1417.3440.1337" timestamp="1606945901296" />
-    <state width="2709" height="438" key="GridCell.Tab.0.center/-1760.-1417.3440.1417/0.23.1680.960@-1760.-1417.3440.1417" timestamp="1607608008066" />
-    <state width="2709" height="356" key="GridCell.Tab.0.center/-1760.-1417.3440.1417/0.23.1680.961@-1760.-1417.3440.1417" timestamp="1607565102813" />
-    <state width="1351" height="358" key="GridCell.Tab.0.center/-1760.-1417.3440.1417/0.23.1680.963@-1760.-1417.3440.1417" timestamp="1607545260223" />
-    <state width="2709" height="438" key="GridCell.Tab.0.left" timestamp="1607608008065">
-      <screen x="-1760" y="-1417" width="3440" height="1417" />
-    </state>
-    <state width="2391" height="344" key="GridCell.Tab.0.left/-1760.-1417.3440.1337/0.23.1680.1027@-1760.-1417.3440.1337" timestamp="1606945901295" />
-    <state width="2709" height="438" key="GridCell.Tab.0.left/-1760.-1417.3440.1417/0.23.1680.960@-1760.-1417.3440.1417" timestamp="1607608008065" />
-    <state width="2709" height="356" key="GridCell.Tab.0.left/-1760.-1417.3440.1417/0.23.1680.961@-1760.-1417.3440.1417" timestamp="1607565102811" />
-    <state width="1351" height="358" key="GridCell.Tab.0.left/-1760.-1417.3440.1417/0.23.1680.963@-1760.-1417.3440.1417" timestamp="1607545260223" />
-    <state width="2709" height="438" key="GridCell.Tab.0.right" timestamp="1607608008066">
-      <screen x="-1760" y="-1417" width="3440" height="1417" />
-    </state>
-    <state width="2391" height="344" key="GridCell.Tab.0.right/-1760.-1417.3440.1337/0.23.1680.1027@-1760.-1417.3440.1337" timestamp="1606945901296" />
-    <state width="2709" height="438" key="GridCell.Tab.0.right/-1760.-1417.3440.1417/0.23.1680.960@-1760.-1417.3440.1417" timestamp="1607608008066" />
-    <state width="2709" height="356" key="GridCell.Tab.0.right/-1760.-1417.3440.1417/0.23.1680.961@-1760.-1417.3440.1417" timestamp="1607565102814" />
-    <state width="1351" height="358" key="GridCell.Tab.0.right/-1760.-1417.3440.1417/0.23.1680.963@-1760.-1417.3440.1417" timestamp="1607545260223" />
-    <state width="2709" height="438" key="GridCell.Tab.1.bottom" timestamp="1607608008067">
-      <screen x="-1760" y="-1417" width="3440" height="1417" />
-    </state>
-    <state width="2093" height="453" key="GridCell.Tab.1.bottom/-1760.-1417.3440.1337/0.23.1680.1027@-1760.-1417.3440.1337" timestamp="1606945898601" />
-    <state width="2709" height="438" key="GridCell.Tab.1.bottom/-1760.-1417.3440.1417/0.23.1680.960@-1760.-1417.3440.1417" timestamp="1607608008067" />
-    <state width="2709" height="438" key="GridCell.Tab.1.bottom/-1760.-1417.3440.1417/0.23.1680.961@-1760.-1417.3440.1417" timestamp="1607564822914" />
-    <state width="2093" height="453" key="GridCell.Tab.1.bottom/-1760.-1417.3440.1417/0.23.1680.963@-1760.-1417.3440.1417" timestamp="1607098611725" />
-    <state width="2709" height="438" key="GridCell.Tab.1.center" timestamp="1607608008067">
-      <screen x="-1760" y="-1417" width="3440" height="1417" />
-    </state>
-    <state width="2093" height="453" key="GridCell.Tab.1.center/-1760.-1417.3440.1337/0.23.1680.1027@-1760.-1417.3440.1337" timestamp="1606945898600" />
-    <state width="2709" height="438" key="GridCell.Tab.1.center/-1760.-1417.3440.1417/0.23.1680.960@-1760.-1417.3440.1417" timestamp="1607608008067" />
-    <state width="2709" height="438" key="GridCell.Tab.1.center/-1760.-1417.3440.1417/0.23.1680.961@-1760.-1417.3440.1417" timestamp="1607564822914" />
-    <state width="2093" height="453" key="GridCell.Tab.1.center/-1760.-1417.3440.1417/0.23.1680.963@-1760.-1417.3440.1417" timestamp="1607098611725" />
-    <state width="2709" height="438" key="GridCell.Tab.1.left" timestamp="1607608008066">
-      <screen x="-1760" y="-1417" width="3440" height="1417" />
-    </state>
-    <state width="2093" height="453" key="GridCell.Tab.1.left/-1760.-1417.3440.1337/0.23.1680.1027@-1760.-1417.3440.1337" timestamp="1606945898600" />
-    <state width="2709" height="438" key="GridCell.Tab.1.left/-1760.-1417.3440.1417/0.23.1680.960@-1760.-1417.3440.1417" timestamp="1607608008066" />
-    <state width="2709" height="438" key="GridCell.Tab.1.left/-1760.-1417.3440.1417/0.23.1680.961@-1760.-1417.3440.1417" timestamp="1607564822913" />
-    <state width="2093" height="453" key="GridCell.Tab.1.left/-1760.-1417.3440.1417/0.23.1680.963@-1760.-1417.3440.1417" timestamp="1607098611725" />
-    <state width="2709" height="438" key="GridCell.Tab.1.right" timestamp="1607608008067">
-      <screen x="-1760" y="-1417" width="3440" height="1417" />
-    </state>
-    <state width="2093" height="453" key="GridCell.Tab.1.right/-1760.-1417.3440.1337/0.23.1680.1027@-1760.-1417.3440.1337" timestamp="1606945898601" />
-    <state width="2709" height="438" key="GridCell.Tab.1.right/-1760.-1417.3440.1417/0.23.1680.960@-1760.-1417.3440.1417" timestamp="1607608008067" />
-    <state width="2709" height="438" key="GridCell.Tab.1.right/-1760.-1417.3440.1417/0.23.1680.961@-1760.-1417.3440.1417" timestamp="1607564822914" />
-    <state width="2093" height="453" key="GridCell.Tab.1.right/-1760.-1417.3440.1417/0.23.1680.963@-1760.-1417.3440.1417" timestamp="1607098611725" />
-    <state width="2709" height="438" key="GridCell.Tab.2.bottom" timestamp="1607608008068">
-      <screen x="-1760" y="-1417" width="3440" height="1417" />
-    </state>
-    <state width="2093" height="453" key="GridCell.Tab.2.bottom/-1760.-1417.3440.1337/0.23.1680.1027@-1760.-1417.3440.1337" timestamp="1606945898602" />
-    <state width="2709" height="438" key="GridCell.Tab.2.bottom/-1760.-1417.3440.1417/0.23.1680.960@-1760.-1417.3440.1417" timestamp="1607608008068" />
-    <state width="2709" height="438" key="GridCell.Tab.2.bottom/-1760.-1417.3440.1417/0.23.1680.961@-1760.-1417.3440.1417" timestamp="1607564822915" />
-    <state width="2093" height="453" key="GridCell.Tab.2.bottom/-1760.-1417.3440.1417/0.23.1680.963@-1760.-1417.3440.1417" timestamp="1607098611726" />
-    <state width="2709" height="438" key="GridCell.Tab.2.center" timestamp="1607608008068">
-      <screen x="-1760" y="-1417" width="3440" height="1417" />
-    </state>
-    <state width="2093" height="453" key="GridCell.Tab.2.center/-1760.-1417.3440.1337/0.23.1680.1027@-1760.-1417.3440.1337" timestamp="1606945898601" />
-    <state width="2709" height="438" key="GridCell.Tab.2.center/-1760.-1417.3440.1417/0.23.1680.960@-1760.-1417.3440.1417" timestamp="1607608008068" />
-    <state width="2709" height="438" key="GridCell.Tab.2.center/-1760.-1417.3440.1417/0.23.1680.961@-1760.-1417.3440.1417" timestamp="1607564822914" />
-    <state width="2093" height="453" key="GridCell.Tab.2.center/-1760.-1417.3440.1417/0.23.1680.963@-1760.-1417.3440.1417" timestamp="1607098611726" />
-    <state width="2709" height="438" key="GridCell.Tab.2.left" timestamp="1607608008067">
-      <screen x="-1760" y="-1417" width="3440" height="1417" />
-    </state>
-    <state width="2093" height="453" key="GridCell.Tab.2.left/-1760.-1417.3440.1337/0.23.1680.1027@-1760.-1417.3440.1337" timestamp="1606945898601" />
-    <state width="2709" height="438" key="GridCell.Tab.2.left/-1760.-1417.3440.1417/0.23.1680.960@-1760.-1417.3440.1417" timestamp="1607608008067" />
-    <state width="2709" height="438" key="GridCell.Tab.2.left/-1760.-1417.3440.1417/0.23.1680.961@-1760.-1417.3440.1417" timestamp="1607564822914" />
-    <state width="2093" height="453" key="GridCell.Tab.2.left/-1760.-1417.3440.1417/0.23.1680.963@-1760.-1417.3440.1417" timestamp="1607098611726" />
-    <state width="2709" height="438" key="GridCell.Tab.2.right" timestamp="1607608008068">
-      <screen x="-1760" y="-1417" width="3440" height="1417" />
-    </state>
-    <state width="2093" height="453" key="GridCell.Tab.2.right/-1760.-1417.3440.1337/0.23.1680.1027@-1760.-1417.3440.1337" timestamp="1606945898601" />
-    <state width="2709" height="438" key="GridCell.Tab.2.right/-1760.-1417.3440.1417/0.23.1680.960@-1760.-1417.3440.1417" timestamp="1607608008068" />
-    <state width="2709" height="438" key="GridCell.Tab.2.right/-1760.-1417.3440.1417/0.23.1680.961@-1760.-1417.3440.1417" timestamp="1607564822915" />
-    <state width="2093" height="453" key="GridCell.Tab.2.right/-1760.-1417.3440.1417/0.23.1680.963@-1760.-1417.3440.1417" timestamp="1607098611726" />
-    <state width="2709" height="438" key="GridCell.Tab.3.bottom" timestamp="1607608008069">
-      <screen x="-1760" y="-1417" width="3440" height="1417" />
-    </state>
-    <state width="2093" height="453" key="GridCell.Tab.3.bottom/-1760.-1417.3440.1337/0.23.1680.1027@-1760.-1417.3440.1337" timestamp="1606945898602" />
-    <state width="2709" height="438" key="GridCell.Tab.3.bottom/-1760.-1417.3440.1417/0.23.1680.960@-1760.-1417.3440.1417" timestamp="1607608008069" />
-    <state width="2709" height="438" key="GridCell.Tab.3.bottom/-1760.-1417.3440.1417/0.23.1680.961@-1760.-1417.3440.1417" timestamp="1607564822916" />
-    <state width="2093" height="453" key="GridCell.Tab.3.bottom/-1760.-1417.3440.1417/0.23.1680.963@-1760.-1417.3440.1417" timestamp="1607098611727" />
-    <state width="2709" height="438" key="GridCell.Tab.3.center" timestamp="1607608008068">
-      <screen x="-1760" y="-1417" width="3440" height="1417" />
-    </state>
-    <state width="2093" height="453" key="GridCell.Tab.3.center/-1760.-1417.3440.1337/0.23.1680.1027@-1760.-1417.3440.1337" timestamp="1606945898602" />
-    <state width="2709" height="438" key="GridCell.Tab.3.center/-1760.-1417.3440.1417/0.23.1680.960@-1760.-1417.3440.1417" timestamp="1607608008068" />
-    <state width="2709" height="438" key="GridCell.Tab.3.center/-1760.-1417.3440.1417/0.23.1680.961@-1760.-1417.3440.1417" timestamp="1607564822915" />
-    <state width="2093" height="453" key="GridCell.Tab.3.center/-1760.-1417.3440.1417/0.23.1680.963@-1760.-1417.3440.1417" timestamp="1607098611727" />
-    <state width="2709" height="438" key="GridCell.Tab.3.left" timestamp="1607608008068">
-      <screen x="-1760" y="-1417" width="3440" height="1417" />
-    </state>
-    <state width="2093" height="453" key="GridCell.Tab.3.left/-1760.-1417.3440.1337/0.23.1680.1027@-1760.-1417.3440.1337" timestamp="1606945898602" />
-    <state width="2709" height="438" key="GridCell.Tab.3.left/-1760.-1417.3440.1417/0.23.1680.960@-1760.-1417.3440.1417" timestamp="1607608008068" />
-    <state width="2709" height="438" key="GridCell.Tab.3.left/-1760.-1417.3440.1417/0.23.1680.961@-1760.-1417.3440.1417" timestamp="1607564822915" />
-    <state width="2093" height="453" key="GridCell.Tab.3.left/-1760.-1417.3440.1417/0.23.1680.963@-1760.-1417.3440.1417" timestamp="1607098611726" />
-    <state width="2709" height="438" key="GridCell.Tab.3.right" timestamp="1607608008069">
-      <screen x="-1760" y="-1417" width="3440" height="1417" />
-    </state>
-    <state width="2093" height="453" key="GridCell.Tab.3.right/-1760.-1417.3440.1337/0.23.1680.1027@-1760.-1417.3440.1337" timestamp="1606945898602" />
-    <state width="2709" height="438" key="GridCell.Tab.3.right/-1760.-1417.3440.1417/0.23.1680.960@-1760.-1417.3440.1417" timestamp="1607608008069" />
-    <state width="2709" height="438" key="GridCell.Tab.3.right/-1760.-1417.3440.1417/0.23.1680.961@-1760.-1417.3440.1417" timestamp="1607564822915" />
-    <state width="2093" height="453" key="GridCell.Tab.3.right/-1760.-1417.3440.1417/0.23.1680.963@-1760.-1417.3440.1417" timestamp="1607098611727" />
-    <state width="2709" height="438" key="GridCell.Tab.4.bottom" timestamp="1607608008070">
-      <screen x="-1760" y="-1417" width="3440" height="1417" />
-    </state>
-    <state width="2093" height="453" key="GridCell.Tab.4.bottom/-1760.-1417.3440.1337/0.23.1680.1027@-1760.-1417.3440.1337" timestamp="1606945898603" />
-    <state width="2709" height="438" key="GridCell.Tab.4.bottom/-1760.-1417.3440.1417/0.23.1680.960@-1760.-1417.3440.1417" timestamp="1607608008070" />
-    <state width="2709" height="438" key="GridCell.Tab.4.bottom/-1760.-1417.3440.1417/0.23.1680.961@-1760.-1417.3440.1417" timestamp="1607564822917" />
-    <state width="2093" height="453" key="GridCell.Tab.4.bottom/-1760.-1417.3440.1417/0.23.1680.963@-1760.-1417.3440.1417" timestamp="1607098611728" />
-    <state width="2709" height="438" key="GridCell.Tab.4.center" timestamp="1607608008069">
-      <screen x="-1760" y="-1417" width="3440" height="1417" />
-    </state>
-    <state width="2093" height="453" key="GridCell.Tab.4.center/-1760.-1417.3440.1337/0.23.1680.1027@-1760.-1417.3440.1337" timestamp="1606945898603" />
-    <state width="2709" height="438" key="GridCell.Tab.4.center/-1760.-1417.3440.1417/0.23.1680.960@-1760.-1417.3440.1417" timestamp="1607608008069" />
-    <state width="2709" height="438" key="GridCell.Tab.4.center/-1760.-1417.3440.1417/0.23.1680.961@-1760.-1417.3440.1417" timestamp="1607564822916" />
-    <state width="2093" height="453" key="GridCell.Tab.4.center/-1760.-1417.3440.1417/0.23.1680.963@-1760.-1417.3440.1417" timestamp="1607098611728" />
-    <state width="2709" height="438" key="GridCell.Tab.4.left" timestamp="1607608008069">
-      <screen x="-1760" y="-1417" width="3440" height="1417" />
-    </state>
-    <state width="2093" height="453" key="GridCell.Tab.4.left/-1760.-1417.3440.1337/0.23.1680.1027@-1760.-1417.3440.1337" timestamp="1606945898603" />
-    <state width="2709" height="438" key="GridCell.Tab.4.left/-1760.-1417.3440.1417/0.23.1680.960@-1760.-1417.3440.1417" timestamp="1607608008069" />
-    <state width="2709" height="438" key="GridCell.Tab.4.left/-1760.-1417.3440.1417/0.23.1680.961@-1760.-1417.3440.1417" timestamp="1607564822916" />
-    <state width="2093" height="453" key="GridCell.Tab.4.left/-1760.-1417.3440.1417/0.23.1680.963@-1760.-1417.3440.1417" timestamp="1607098611727" />
-    <state width="2709" height="438" key="GridCell.Tab.4.right" timestamp="1607608008070">
-      <screen x="-1760" y="-1417" width="3440" height="1417" />
-    </state>
-    <state width="2093" height="453" key="GridCell.Tab.4.right/-1760.-1417.3440.1337/0.23.1680.1027@-1760.-1417.3440.1337" timestamp="1606945898603" />
-    <state width="2709" height="438" key="GridCell.Tab.4.right/-1760.-1417.3440.1417/0.23.1680.960@-1760.-1417.3440.1417" timestamp="1607608008070" />
-    <state width="2709" height="438" key="GridCell.Tab.4.right/-1760.-1417.3440.1417/0.23.1680.961@-1760.-1417.3440.1417" timestamp="1607564822916" />
-    <state width="2093" height="453" key="GridCell.Tab.4.right/-1760.-1417.3440.1417/0.23.1680.963@-1760.-1417.3440.1417" timestamp="1607098611728" />
-    <state x="-667" y="-1025" key="Rider.ProjectTemplateDialog.Size" timestamp="1607710509137">
-      <screen x="-1760" y="-1417" width="3440" height="1417" />
-    </state>
-    <state x="-667" y="-1025" key="Rider.ProjectTemplateDialog.Size/-1760.-1417.3440.1417/0.23.1680.956@-1760.-1417.3440.1417" timestamp="1607710509137" />
-    <state x="-29" y="-1095" width="672" height="678" key="search.everywhere.popup" timestamp="1606938720200">
-      <screen x="-1760" y="-1417" width="3440" height="1417" />
-    </state>
-    <state x="-29" y="-1095" width="672" height="678" key="search.everywhere.popup/-1760.-1417.3440.1417/0.23.1680.963@-1760.-1417.3440.1417" timestamp="1606938720200" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/CapnCrunchGMBot/Services/GroupMeService.cs</url>
+          <line>193</line>
+          <properties documentPath="$PROJECT_DIR$/CapnCrunchGMBot/Services/GroupMeService.cs" initialLine="115">
+            <startOffsets>
+              <option value="8261" />
+            </startOffsets>
+            <endOffsets>
+              <option value="8363" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/CapnCrunchGMBot/Services/RumorService.cs</url>
+          <line>122</line>
+          <properties documentPath="$PROJECT_DIR$/CapnCrunchGMBot/Services/RumorService.cs" initialLine="122">
+            <startOffsets>
+              <option value="4454" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4484" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/CapnCrunchGMBot/Services/RumorService.cs</url>
+          <line>158</line>
+          <properties documentPath="$PROJECT_DIR$/CapnCrunchGMBot/Services/RumorService.cs" initialLine="158">
+            <startOffsets>
+              <option value="5928" />
+            </startOffsets>
+            <endOffsets>
+              <option value="6000" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/CapnCrunchGMBot/Services/RumorService.cs</url>
+          <line>192</line>
+          <properties documentPath="$PROJECT_DIR$/CapnCrunchGMBot/Services/RumorService.cs" initialLine="192">
+            <startOffsets>
+              <option value="7378" />
+            </startOffsets>
+            <endOffsets>
+              <option value="7424" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/CapnCrunchGMBot/Services/GroupMeService.cs</url>
+          <line>113</line>
+          <properties documentPath="$PROJECT_DIR$/CapnCrunchGMBot/Services/GroupMeService.cs" initialLine="107">
+            <startOffsets>
+              <option value="3784" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3834" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
