@@ -1,12 +1,11 @@
 using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using CapnCrunchGMBot.Interfaces;
 using CapnCrunchGMBot.Models;
 
-namespace CapnCrunchGMBot
+namespace CapnCrunchGMBot.Services
 {
     public interface IRumorService
     {
@@ -98,8 +97,8 @@ namespace CapnCrunchGMBot
             {
                 var pickDetails = str.Split("_");
                 if (pickDetails[0].ToUpper() == "DP" && (pickDetails[1] == "0" || pickDetails[1] == "1")) return true;
-                if (pickDetails[0].ToUpper() == "FP" && (pickDetails[pickDetails.Length - 1] == "1" ||
-                                                         pickDetails[pickDetails.Length - 1] == "2")) return true;
+                if (pickDetails[0].ToUpper() == "FP" && (pickDetails[^1] == "1" ||
+                                                         pickDetails[^1] == "2")) return true;
             }
             return false;
         }
@@ -115,23 +114,14 @@ namespace CapnCrunchGMBot
             var picksOnly = splitIds.Where(a => a.Contains("_")).ToList();
             var onlyPlayersList = splitIds.Where(a => !a.Contains("_")).ToList();
             // if trailing comma, delete last
-            if (onlyPlayersList[onlyPlayersList.Count - 1] == "")
-            {
+            if (onlyPlayersList[^1] == "") 
                 onlyPlayersList.RemoveAt(onlyPlayersList.Count - 1);
-            }
             var onlyPlayers = String.Join(",", onlyPlayersList);
-            if (onlyPlayersList.Count > 1)
-            {
-                var res = await _mflApi.GetPlayersDetails(onlyPlayers);
-                playerList = res.players.player;
-            }
-
+            if (onlyPlayersList.Count > 1) 
+                playerList = (await _mflApi.GetPlayersDetails(onlyPlayers)).players.player;
             if (onlyPlayersList.Count == 1)
-            {
-                var res = await _mflApi.GetPlayerDetails(onlyPlayers);
-                playerList.Add(res.players.player);
-            }
-            
+                playerList.Add((await _mflApi.GetPlayerDetails(onlyPlayers)).players.player);
+
             var salaries = await _mflApi.GetPlayerSalaries();
             
             foreach (var player in playerList)
@@ -155,9 +145,7 @@ namespace CapnCrunchGMBot
                     pickString = $"The {round}.{pickNum} draft pick \n";
                 }
                 if (pickDetails[0].ToUpper() == "FP")
-                {
                     pickString = $"A {pickDetails[2]} round {pickDetails[3]} draft pick \n";
-                }
 
                 ret += pickString;
             }
@@ -184,28 +172,21 @@ namespace CapnCrunchGMBot
                     ret += $"{name} (${salary}, {years} yrs left) \n";
                     return ret;
                 }
-                else
+                var pickDetails = asset.Split("_");
+                if (pickDetails[0].ToUpper() == "DP")
                 {
-                    var pickDetails = asset.Split("_");
-                    if (pickDetails[0].ToUpper() == "DP")
-                    {
-                        var round = Int32.Parse(pickDetails[1]) + 1;
-                        var pickNum = Int32.Parse(pickDetails[2]) + 1;
-                        ret += $"The {round}.{pickNum} draft pick \n";
-                    }
-                    if (pickDetails[0].ToUpper() == "FP")
-                    {
-                        ret += $"A {pickDetails[2]} round {pickDetails[3]} draft pick \n";
-                    }
+                    var round = Int32.Parse(pickDetails[1]) + 1;
+                    var pickNum = Int32.Parse(pickDetails[2]) + 1;
+                    ret += $"The {round}.{pickNum} draft pick \n";
                 }
+                if (pickDetails[0].ToUpper() == "FP")
+                    ret += $"A {pickDetails[2]} round {pickDetails[3]} draft pick \n";
             }
-
             return ret;
         }
 
         private Dictionary<int, string> sources = new Dictionary<int, string>()
         {
-
             {1, "My sources are telling me "},
             {2, "Sources close to the situation say "},
             {3, "Franchise execs say "},
@@ -229,7 +210,6 @@ namespace CapnCrunchGMBot
         };
         private Dictionary<int, string> pickTalk = new Dictionary<int, string>()
         {
-
             {1, " Word is that he's also open to moving some valuable picks. "},
             {2, " I'm also told that early draft picks are on the table. "},
             {3, " From what I've heard, he isn't afraid to move some early round picks either. "},
