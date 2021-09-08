@@ -196,10 +196,10 @@ namespace CapnCrunchGMBot
                 var ownerName = "";
                 owners.TryGetValue(Int32.Parse(tradeBait.franchise_id), out ownerName);
                 strForBot += ownerName + " ";
-                //check if this is a new post or not.
+                // check if this is a new post or not.
                 var postDate = DateTimeOffset.FromUnixTimeSeconds(Convert.ToInt64(tradeBait.timestamp));
-                if (postDate < DateTime.Now.AddDays(-1)) return;
-                // add verbage
+                if (postDate < DateTime.Now.AddMinutes(-10)) return;
+                // add verbiage
                 strForBot += _rumor.AddBaitAction();
                 var hasEarlyPicks = _rumor.CheckForFirstRounders(tradeBait.willGiveUp);
                 var multiplePlayers = _rumor.CheckForMultiplePlayers(tradeBait.willGiveUp);
