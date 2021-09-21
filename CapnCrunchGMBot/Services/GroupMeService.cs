@@ -19,6 +19,7 @@ namespace CapnCrunchGMBot
         public Task PostTradeRumor();
         public Task PostCompletedTradeToGroup();
         Task BotPost(string text);
+        public Task<List<TYTScore>> PostTYTTop5(int year);
     }
     
     public class GroupMeService : IGroupMeService
@@ -75,11 +76,31 @@ namespace CapnCrunchGMBot
             var strForBot = "STANDINGS \n";
             standings.ForEach(s =>
             {
-                strForBot = $"{strForBot}{owners[s.FranchiseId]}   {s.H2hWins2}-{s.H2hLosses2}   {s.PointsFor2} \n";
+                strForBot = $"{strForBot}{owners[s.FranchiseId]} VP:{s.VictoryPoints2}  {s.H2hWins2}-{s.H2hLosses2}   {s.PointsFor2} \n";
             });
-
             await BotPost(strForBot);
             return standings;
+        }
+        
+        public async Task<List<TYTScore>> PostTYTTop5(int year)
+        {
+            var standings = await _myApi.GetMflStandings(year);
+            var strForBot = "Tri-Year Trophy Presented by Taco Bell\nTOP 5\n";
+            var tytScores = standings.Select(t => new TYTScore
+            {
+                Owner = owners[t.FranchiseId],
+                Score = (t.H2hWins1 * 5 + t.PointsFor1) + (t.H2hWins2 * 5 + t.PointsFor2)
+                                                        + (t.H2hWins3 * 5 + t.PointsFor3)
+            }).OrderByDescending(t => t.Score)
+                .Take(5)
+                .ToList();
+
+            tytScores.ForEach(s =>
+            {
+                strForBot = $"{strForBot}{s.Owner} - {s.Score}\n";
+            });
+            //await BotPost(strForBot);
+            return tytScores;
         }
 
         public async Task<List<PendingTrade>> PostTradeOffersToGroup(int year)

@@ -31,6 +31,21 @@ namespace CapnCrunchGMBot.Controllers
                 throw;
             }
         }
+        
+        [HttpGet("TYT/{year}")]
+        public async Task<List<TYTScore>> PostTriYearTrophyStandingsToGM(int year)
+        {
+            try
+            {
+                return await _groupMeService.PostTYTTop5(year);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                Console.WriteLine(e.StackTrace);
+                throw;
+            }
+        }
 
         [HttpGet("pendingTrades/{year}")]
         public async Task<List<PendingTrade>> PostTradeOffers(int year)
