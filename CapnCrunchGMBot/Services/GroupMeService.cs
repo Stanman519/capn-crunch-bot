@@ -72,11 +72,15 @@ namespace CapnCrunchGMBot
 
         public async Task<List<TeamStandings>> PostStandingsToGroup(int year)
         {
-            var standings = await _myApi.GetMflStandings(year);
+            var standings = (await _myApi.GetMflStandings(year))
+                .OrderByDescending(_ => _.VictoryPoints2)
+                .ThenByDescending(_ => _.H2hWins2)
+                .ThenByDescending(_ => _.PointsFor2)
+                .ToList();
             var strForBot = "STANDINGS \n";
             standings.ForEach(s =>
             {
-                strForBot = $"{strForBot}{owners[s.FranchiseId]} VP:{s.VictoryPoints2}  {s.H2hWins2}-{s.H2hLosses2}   {s.PointsFor2} \n";
+                strForBot = $"{strForBot}{owners[s.FranchiseId]}  ({s.VictoryPoints2} VP)  {s.H2hWins2}-{s.H2hLosses2}    {s.PointsFor2} pts\n";
             });
             await BotPost(strForBot);
             return standings;
@@ -99,7 +103,7 @@ namespace CapnCrunchGMBot
             {
                 strForBot = $"{strForBot}{s.Owner} - {s.Score}\n";
             });
-            //await BotPost(strForBot);
+            await BotPost(strForBot);
             return tytScores;
         }
 
