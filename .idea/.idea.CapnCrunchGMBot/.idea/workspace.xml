@@ -8,32 +8,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68a5c67f-6964-4d0a-a763-c10f224c3d32" name="Default Changelist" comment="time difference issue">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CapnCrunchGMBot/.idea/contentModel.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CapnCrunchGMBot/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CapnCrunchGMBot/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CapnCrunchGMBot/.idea/modules.xml" beforeDir="false" />
+    <list default="true" id="68a5c67f-6964-4d0a-a763-c10f224c3d32" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CapnCrunchGMBot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CapnCrunchGMBot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CapnCrunchGMBot/riderModule.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/.idea/.idea.CapnCrunchGMBot.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/.idea/.idea.CapnCrunchGMBot.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/Services/GroupMeService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/Services/GroupMeService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/bin/Debug/netcoreapp3.1/CapnCrunchGMBot.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/bin/Debug/netcoreapp3.1/CapnCrunchGMBot.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/bin/Debug/netcoreapp3.1/CapnCrunchGMBot.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/bin/Debug/netcoreapp3.1/CapnCrunchGMBot.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/obj/CapnCrunchGMBot.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/obj/CapnCrunchGMBot.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/obj/CapnCrunchGMBot.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/obj/CapnCrunchGMBot.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/obj/Debug/netcoreapp3.1/CapnCrunchGMBot.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/obj/Debug/netcoreapp3.1/CapnCrunchGMBot.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/obj/Debug/netcoreapp3.1/CapnCrunchGMBot.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/obj/Debug/netcoreapp3.1/CapnCrunchGMBot.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/obj/Debug/netcoreapp3.1/CapnCrunchGMBot.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/obj/Debug/netcoreapp3.1/CapnCrunchGMBot.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/obj/Debug/netcoreapp3.1/CapnCrunchGMBot.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/obj/Debug/netcoreapp3.1/CapnCrunchGMBot.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/obj/Debug/netcoreapp3.1/CapnCrunchGMBot.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/obj/Debug/netcoreapp3.1/CapnCrunchGMBot.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/obj/Debug/netcoreapp3.1/CapnCrunchGMBot.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/obj/Debug/netcoreapp3.1/CapnCrunchGMBot.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/obj/Debug/netcoreapp3.1/CapnCrunchGMBot.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/obj/Debug/netcoreapp3.1/CapnCrunchGMBot.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapnCrunchGMBot/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CapnCrunchGMBot/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,16 +27,19 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/EB067793-5C3F-4219-AEF1-3AB117C20649/3A4/List.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/EB067793-5C3F-4219-AEF1-3AB117C20649/22D/AsyncValueTaskMethodBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/dks0584182/Documents/Heroku/CapnCrunchGMBot/CapnCrunchGMBot/Services/GroupMeService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/EB067793-5C3F-4219-AEF1-3AB117C20649/22D/AsyncValueTaskMethodBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7D4EC089-175C-434C-89DB-7DCF04F93318/18/1ccec373/ImplementationFactory.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/EB067793-5C3F-4219-AEF1-3AB117C20649/147/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/EB067793-5C3F-4219-AEF1-3AB117C20649/1D8/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/CapnCrunchGMBot/Controllers/BotController.cs" />
       <option value="$PROJECT_DIR$/CapnCrunchGMBot/Program.cs" />
+      <option value="$PROJECT_DIR$/CapnCrunchGMBot/Models/TradeBait.cs" />
+      <option value="$PROJECT_DIR$/CapnCrunchGMBot/Services/RumorService.cs" />
+      <option value="$PROJECT_DIR$/CapnCrunchGMBot/Models/TYTScore.cs" />
+      <option value="$PROJECT_DIR$/CapnCrunchGMBot/Controllers/BotController.cs" />
       <option value="$PROJECT_DIR$/CapnCrunchGMBot/Services/GroupMeService.cs" />
     </changedPaths>
   </component>
@@ -67,9 +52,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.12730466" />
-    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.10886743" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.12699565" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -153,7 +139,11 @@
       <workItem from="1620504796795" duration="2205000" />
       <workItem from="1628259298963" duration="4173000" />
       <workItem from="1628274770861" duration="85000" />
-      <workItem from="1628275320739" duration="1767000" />
+      <workItem from="1628275320739" duration="2888000" />
+      <workItem from="1631030052701" duration="925000" />
+      <workItem from="1631121604252" duration="2843000" />
+      <workItem from="1632232888839" duration="1751000" />
+      <workItem from="1632235799486" duration="2347000" />
     </task>
     <task id="LOCAL-00001" summary="moved files">
       <created>1607711394441</created>
@@ -267,7 +257,28 @@
       <option name="project" value="LOCAL" />
       <updated>1628275631877</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="error in timing of trade offers">
+      <created>1628519570935</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1628519570935</updated>
+    </task>
+    <task id="LOCAL-00018" summary="changing rate for trade block to 10 min">
+      <created>1631121841836</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1631121841836</updated>
+    </task>
+    <task id="LOCAL-00019" summary="code cleanup">
+      <created>1631124488936</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1631124488936</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,75 +316,39 @@
     <MESSAGE value="trade offers every ten min" />
     <MESSAGE value="fixed 10 minute issue for pending trades" />
     <MESSAGE value="time difference issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="time difference issue" />
+    <MESSAGE value="error in timing of trade offers" />
+    <MESSAGE value="changing rate for trade block to 10 min" />
+    <MESSAGE value="code cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="code cleanup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/CapnCrunchGMBot/Services/GroupMeService.cs</url>
-          <line>193</line>
-          <properties documentPath="$PROJECT_DIR$/CapnCrunchGMBot/Services/GroupMeService.cs" initialLine="115">
-            <startOffsets>
-              <option value="8261" />
-            </startOffsets>
-            <endOffsets>
-              <option value="8363" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/CapnCrunchGMBot/Services/RumorService.cs</url>
-          <line>122</line>
+          <line>119</line>
           <properties documentPath="$PROJECT_DIR$/CapnCrunchGMBot/Services/RumorService.cs" initialLine="122">
             <startOffsets>
-              <option value="4454" />
+              <option value="4345" />
             </startOffsets>
             <endOffsets>
-              <option value="4484" />
+              <option value="4375" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/CapnCrunchGMBot/Services/RumorService.cs</url>
-          <line>158</line>
-          <properties documentPath="$PROJECT_DIR$/CapnCrunchGMBot/Services/RumorService.cs" initialLine="158">
+          <url>file://$PROJECT_DIR$/CapnCrunchGMBot/Services/GroupMeService.cs</url>
+          <line>96</line>
+          <properties documentPath="$PROJECT_DIR$/CapnCrunchGMBot/Services/GroupMeService.cs" initialLine="85" containingFunctionPresentation="method 'PostTYTTop5'">
             <startOffsets>
-              <option value="5928" />
+              <option value="2988" />
             </startOffsets>
             <endOffsets>
-              <option value="6000" />
+              <option value="3039" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/CapnCrunchGMBot/Services/RumorService.cs</url>
-          <line>192</line>
-          <properties documentPath="$PROJECT_DIR$/CapnCrunchGMBot/Services/RumorService.cs" initialLine="192">
-            <startOffsets>
-              <option value="7378" />
-            </startOffsets>
-            <endOffsets>
-              <option value="7424" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/CapnCrunchGMBot/Services/GroupMeService.cs</url>
-          <line>113</line>
-          <properties documentPath="$PROJECT_DIR$/CapnCrunchGMBot/Services/GroupMeService.cs" initialLine="107">
-            <startOffsets>
-              <option value="3784" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3834" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

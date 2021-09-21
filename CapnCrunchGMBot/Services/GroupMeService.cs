@@ -85,6 +85,12 @@ namespace CapnCrunchGMBot
             await BotPost(strForBot);
             return standings;
         }
+
+        public int GetAdjustedWins(int h2hWins, int vp)
+        {
+            return h2hWins + vp - (h2hWins * 2);
+        }
+        
         
         public async Task<List<TYTScore>> PostTYTTop5(int year)
         {
@@ -93,8 +99,8 @@ namespace CapnCrunchGMBot
             var tytScores = standings.Select(t => new TYTScore
             {
                 Owner = owners[t.FranchiseId],
-                Score = (t.H2hWins1 * 5 + t.PointsFor1) + (t.H2hWins2 * 5 + t.PointsFor2)
-                                                        + (t.H2hWins3 * 5 + t.PointsFor3)
+                Score = (t.H2hWins1 * 5 + t.PointsFor1) + ((GetAdjustedWins(t.H2hWins2, t.VictoryPoints2) * 5) + t.PointsFor2)
+                                                        + ((GetAdjustedWins(t.H2hWins3, t.VictoryPoints3) * 5) + t.PointsFor3)
             }).OrderByDescending(t => t.Score)
                 .Take(5)
                 .ToList();
