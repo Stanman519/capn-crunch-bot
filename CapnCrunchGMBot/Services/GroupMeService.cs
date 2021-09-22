@@ -126,7 +126,7 @@ namespace CapnCrunchGMBot
             {
                 trades.ForEach(async t =>
                 {
-                    var timeDifference = t.timeStamp.TimeOfDay - DateTime.Now.AddMinutes(-10).TimeOfDay;
+                    var timeDifference = t.timeStamp.TimeOfDay - DateTime.Now.AddMinutes(-11).TimeOfDay;
                     if (timeDifference.Ticks > 0 && timeDifference < tenMinDuration)
                     {
                         // get member id, then lookup their name;
@@ -157,7 +157,7 @@ namespace CapnCrunchGMBot
                 //Single
                 var tradeSingle = deserializer.Deserialize<TradeTransactionSingle>(jsonString, tradeRes, info)
                     .transactions.transaction;
-                DateTime tenMinAgo = DateTime.Now.AddMinutes(-10);
+                DateTime tenMinAgo = DateTime.Now.AddMinutes(-11);
                 var tradeTime = DateTimeOffset.FromUnixTimeSeconds(Int64.Parse(tradeSingle.timestamp));
                 // check if trade was not in the last 10 minutes to bail early
                 if (tradeTime < tenMinAgo)
@@ -185,7 +185,7 @@ namespace CapnCrunchGMBot
                 //Multiple
                 var multiTrade = deserializer.Deserialize<TradeTransactionMulti>(jsonString, tradeRes, info)
                     .transactions.transaction;
-                var tenMinAgo = DateTime.Now.AddMinutes(-10);
+                var tenMinAgo = DateTime.Now.AddMinutes(-11);
                 foreach (var trade in multiTrade)
                 {
                     var tradeTime = DateTimeOffset.FromUnixTimeSeconds(Int64.Parse(trade.timestamp));
@@ -226,7 +226,7 @@ namespace CapnCrunchGMBot
                 strForBot += $"{ownerName} ";
                 // check if this is a new post or not.
                 var postDate = DateTimeOffset.FromUnixTimeSeconds(Convert.ToInt64(tradeBait.timestamp));
-                if (postDate < DateTime.Now.AddMinutes(-10)) return;
+                if (postDate < DateTime.Now.AddMinutes(-11)) return;
                 // add verbiage
                 strForBot += _rumor.AddBaitAction();
                 var hasEarlyPicks = _rumor.CheckForFirstRounders(tradeBait.willGiveUp);
